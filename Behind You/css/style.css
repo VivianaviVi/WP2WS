@@ -1,0 +1,63 @@
+html,
+body {
+  height: 100%;
+  background-color: #fff4f8;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+canvas {
+  display: block;
+}
+
+#container-p5 {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+#container-three {
+  display: block;
+}
+
+#flash {
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  background: radial-gradient(circle, transparent 42%, rgba(226, 91, 134, 0.92) 100%);
+  opacity: 0;
+}
+
+#lost,
+#rule {
+  position: fixed;
+  left: 50%;
+  z-index: 4;
+  margin: 0;
+  transform: translateX(-50%);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#rule {
+  bottom: 12%;
+  color: #e25b86;
+  font-size: 14px;
+}
+
+#lost {
+  bottom: 18%;
+  color: #c45b86;
+  font-size: 15px;
+}
+
+body.hide-controls .tp-dfwv {
+  display: none !important;
+}
